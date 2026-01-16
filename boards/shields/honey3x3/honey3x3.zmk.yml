@@ -2,8 +2,9 @@ file_format: "1"
 id: honey3x3
 name: Honey 3x3 Macropad
 type: shield
-url: https://boardsource.xyz/store/5ecc2008eee64242946c98c1
-requires: [pro_micro]
+url: https://github.com/andrewmaxwellgh/honey3x3-shield-module/tree/main/boards/shields/honey3x3
+requires:
+  - pro_micro
 features:
   - keys
   - studio
