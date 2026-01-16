@@ -6,10 +6,11 @@
 
 #include <dt-bindings/zmk/matrix_transform.h>
 
+/{
 
-
-/
-{
+&horizontal_physical_layout {
+    transform = <&horizontal_transform>;
+};
     chosen {
         zmk,kscan = &kscan0;
         zmk,physical-layout = &horizontal_physical_layout;
@@ -33,7 +34,7 @@
             ;
     };
 
-    default_transform: keymap_transform0 {
+    horizontal_transform: horizontal_transform {
         compatible = "zmk,matrix-transform";
         columns = <3>; // Length of the "col-gpios" array
         rows = <3>; // Length of the "row-gpios" array
